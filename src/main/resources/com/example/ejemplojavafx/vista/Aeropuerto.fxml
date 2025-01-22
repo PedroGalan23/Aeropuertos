@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="552.0" prefWidth="321.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ejemplojavafx.controlador.AeropuertoControlador">
+   <children>
+      <Label layoutX="45.0" layoutY="39.0" text="Nombre" />
+      <TextField fx:id="txtNombre" layoutX="99.0" layoutY="39.0" prefWidth="157.0" />
+      <Label layoutX="67.0" layoutY="84.0" text="Pais" />
+      <TextField fx:id="txtPais" layoutX="99.0" layoutY="84.0" prefHeight="25.0" prefWidth="157.0" />
+      <Label layoutX="48.0" layoutY="131.0" text="Ciudad" />
+      <TextField fx:id="txtCiudad" layoutX="99.0" layoutY="131.0" prefHeight="25.0" prefWidth="157.0" />
+      <Label layoutX="54.0" layoutY="177.0" text="Calle" />
+      <TextField fx:id="txtCalle" layoutX="99.0" layoutY="177.0" prefHeight="25.0" prefWidth="157.0" />
+      <Label layoutX="45.0" layoutY="223.0" text="Numero" />
+      <TextField fx:id="txtNumero" layoutX="99.0" layoutY="223.0" prefHeight="25.0" prefWidth="157.0" />
+      <Label layoutX="67.0" layoutY="263.0" text="Año" />
+      <TextField fx:id="txtAnio" layoutX="99.0" layoutY="263.0" prefHeight="25.0" prefWidth="157.0" />
+      <Label layoutX="42.0" layoutY="297.0" text="Capcidad" />
+      <TextField fx:id="txtCapacidad" layoutX="99.0" layoutY="297.0" prefHeight="25.0" prefWidth="157.0" />
+      <RadioButton fx:id="rdbPublicos" layoutX="92.0" layoutY="330.0" mnemonicParsing="false" onAction="#cambiarCamposPublicos" selected="true" text="Público" />
+      <Label layoutX="21.0" layoutY="356.0" text="Financiacion" />
+      <TextField fx:id="txtFinanciacion" layoutX="99.0" layoutY="356.0" prefHeight="25.0" prefWidth="157.0" />
+      <Label layoutX="13.0" layoutY="389.0" text="Discapacitados" />
+      <TextField fx:id="txtDiscapacitados" layoutX="99.0" layoutY="389.0" prefHeight="25.0" prefWidth="157.0" />
+      <RadioButton fx:id="rdbPrivados" layoutX="92.0" layoutY="419.0" mnemonicParsing="false" onAction="#cambiarCamposPrivado" text="Privado" />
+      <Label layoutX="44.0" layoutY="450.0" text="N Socios" />
+      <TextField fx:id="txtSocios" layoutX="99.0" layoutY="446.0" prefHeight="25.0" prefWidth="157.0" />
+      <Button fx:id="btnGuardar" layoutX="16.0" layoutY="487.0" mnemonicParsing="false" onAction="#guardar" prefHeight="25.0" prefWidth="146.0" text="Guardar" textFill="#95c975" />
+      <Button fx:id="btnCancelar" layoutX="211.0" layoutY="487.0" mnemonicParsing="false" onAction="#cancelar" prefHeight="25.0" prefWidth="66.0" text="Cancelar" textFill="RED" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="490.0" prefWidth="851.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ejemplojavafx.controlador.AeropuertosControlador">
+   <children>
+      <TableView fx:id="tblAeropuertos" layoutX="46.0" layoutY="98.0" prefHeight="356.0" prefWidth="749.0">
+        <columns>
+          <TableColumn fx:id="colId" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="colNombre" prefWidth="75.0" text="Nombre" />
+            <TableColumn fx:id="colPais" prefWidth="75.0" text="Pais" />
+            <TableColumn fx:id="colCiudad" prefWidth="75.0" text="Ciudad" />
+            <TableColumn fx:id="colCalle" prefWidth="75.0" text="Calle" />
+            <TableColumn fx:id="colNumero" prefWidth="75.0" text="Numero" />
+            <TableColumn fx:id="colAnio" prefWidth="75.0" text="Año" />
+            <TableColumn fx:id="colCapacidad" prefWidth="75.0" text="Capacidad" />
+            <TableColumn fx:id="colSocios" prefWidth="75.0" text="№ Socios" />
+            <TableColumn fx:id="colFinanciacion" prefWidth="75.0" text="Financiacion" />
+            <TableColumn fx:id="colDiscapacitados" prefWidth="75.0" text="Discapacitados" />
+        </columns>
+      </TableView>
+      <RadioButton fx:id="rdbPrivados" layoutX="46.0" layoutY="60.0" mnemonicParsing="false" onAction="#cambiarAeropuertosPrivados" selected="true" text="Privado" />
+      <RadioButton fx:id="rdbPublicos" layoutX="166.0" layoutY="60.0" mnemonicParsing="false" onAction="#cambiarAeropuertosPublicos" text="Público" />
+      <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="838.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Aeropuertos">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#añadirAeropuerto" text="Añadir" />
+                  <MenuItem mnemonicParsing="false" onAction="#editarAeropuerto" text="Editar" />
+                  <MenuItem mnemonicParsing="false" onAction="#borrarAeropuerto" text="Borrar" />
+                  <MenuItem mnemonicParsing="false" onAction="#gananciasAeropuerto" text="Ganancias" />
+                  <MenuItem mnemonicParsing="false" onAction="#infoAeropuerto" text="Mostrar Informacion" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Aviones">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#aniadriAvion" text="Añadir" />
+                  <MenuItem mnemonicParsing="false" onAction="#borrarAvion" text="Borrar" />
+                  <MenuItem mnemonicParsing="false" onAction="#activarDesactivarAvion" text="Activar/Desactivar" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <TextField fx:id="txtFiltroNombre" layoutX="587.0" layoutY="56.0" onKeyReleased="#filtroPorNombre" prefHeight="25.0" prefWidth="204.0" />
+      <Label layoutX="468.0" layoutY="60.0" text="Nombre Aeropuerto:" />
+   </children>
+</AnchorPane>
